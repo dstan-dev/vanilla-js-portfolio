@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/0bfd32ae7b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/index.js" defer></script>
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-content">
+        <div class="nav-buttons">
+          <button class="github-btn">Github</button>
+          <button class="contact-btn">Contact</button>
+        </div>
+        <div class="nav-links">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="projects.html">Projects</a></li>
+            <li class="nav-item"><a href="skills.html">Skills</a></li>
+            <li class="nav-item"><a href="about.html">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <div class="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li class="mobile-nav-link">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="projects.html">Projects</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="skills.html">Skills</a>
+        </li>
+        <li class="mobile-nav-link">
+          <a href="about.html">About Me</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-area">
+      <div class="content-bkgd">
+        <h1 class="title white">Contact Me</h1>
+        <h3 class="email white">
+          Email: <a href="mailto:dstan.dev@gmail.com">dstan.dev@gmail.com</a>
+        </h3>
+        <p class="form-text white">
+          If you would like to get in touch, please use the email above or fill
+          out the form below.
+        </p>
+        <form
+          action="https://formspree.io/xdowkogy"
+          class="contact-form"
+          method="POST"
+        >
+          <div class="name-input">
+            <label for="name" class="label-name white"
+              >How should I address you?</label
+            >
+            <input
+              type="text"
+              class="input-name"
+              name="name"
+              id="name"
+              placeholder="Name/Title"
+            />
+          </div>
+
+          <div class="email-input">
+            <label for="email" class="label-email white"
+              >What is your email address? (required)</label
+            >
+            <div class="email-area">
+              <input
+                type="email"
+                name="email"
+                id="visitorEmail"
+                class="input-email"
+                placeholder="name@email.com"
+              />
+              <p class="error-message"></p>
+            </div>
+          </div>
+
+          <div class="reason-select">
+            <label for="reason" class="label-reason white"
+              >What would you like to discuss?</label
+            >
+            <div class="select">
+              <select name="reason" id="reason">
+                <option value="0">Select Topic:</option>
+                <option value="career">Career Opportunity</option>
+                <option value="commission">Commission Inquiry</option>
+                <option value="question">Ask a Question</option>
+                <option value="feedback">Offer Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="message-textarea">
+            <label for="message" class="label-message white"
+              >What would you like to say? (required)</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              cols="50"
+              rows="5"
+              class="message-area"
+              placeholder="Enter your message for me here..."
+            ></textarea>
+          </div>
+
+          <div class="status"></div>
+
+          <button type="submit" class="form-submit" id="submitBtn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="image"></div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <a
+            href="https://www.linkedin.com/in/douglass-stanton"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
